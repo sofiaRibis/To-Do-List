@@ -1,0 +1,68 @@
+h1 {
+    font-family: $font-family;
+    font-size: $h1;
+    line-height: 45px;
+    letter-spacing: 1.5%;  
+    color: $purple;
+    font-weight: 400;
+}
+
+h2 {
+    font-family: $font-family;
+    font-size: $h2;
+    line-height: 57px;
+    letter-spacing: 16%;  
+    color: $purple; 
+    font-weight: 400;
+}
+
+h3 {
+    font-family: $font-family;
+    font-size: $h3;
+    line-height: 27px;
+    letter-spacing: 6%;  
+    color: $black;  
+    font-weight: 400;
+}
+
+h4 {
+    font-family: $font-family;
+    font-size: $h4;
+    line-height: 17px;
+    color: $grey;  
+    font-weight: 400;
+}
+
+li {
+    font-family: $font-family;
+    font-size: $list-size;
+    line-height: 19.5px;
+    color: $black;  
+    font-weight: 500;
+}
+
+p {
+    font-family: $font-family;
+    color: $purple; 
+    font-size: $date; 
+    line-height: 54px;
+    letter-spacing: 1.5%;
+    
+    //for the name of the weekday
+    .semibold {
+        font-weight: 600;
+    }
+
+    //for the number of the day
+    .small {
+       font-family: 400;
+    }
+
+    //for the month
+    .month {
+        font-size: $date-small; 
+        line-height: 27px;
+        font-weight: 400;
+        color: $dark-grey;
+    }
+}
