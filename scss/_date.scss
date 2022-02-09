@@ -3,6 +3,10 @@
     &__inline {
         display: flex;
 
+        p {
+            margin: 0;
+        }
+        
         .small {
             padding-left: 20px;
         }

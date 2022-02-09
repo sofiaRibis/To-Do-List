@@ -1,7 +1,7 @@
 //se volgio il nome del giorno
 const week = new Date();
 let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-document.getElementById('week-name').innerHTML = days[week.getDay()]
+document.getElementById('week-name').innerHTML = days[week.getDay()] + ',';
 
 //se volgio il numero del giorno
 const d = new Date();

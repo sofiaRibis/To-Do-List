@@ -82,6 +82,7 @@ body {
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  height: 100vh;
 }
 
 .center {
@@ -115,10 +116,18 @@ body {
   width: 231px;
 }
 
+main {
+  padding: 34px 30px 57px;
+}
+
 .date__inline {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+}
+
+.date__inline p {
+  margin: 0;
 }
 
 .date__inline .small {
