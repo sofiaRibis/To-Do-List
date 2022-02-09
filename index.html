@@ -30,24 +30,59 @@
 
     <!-- to do list -->
     <main>
-        <div class="date">
-            <div class="date__inline">
-                <!-- weekday -->
-                <p class="semibold" id="week-name"></p>
-                <!-- number -->
-                <p class="small" id="day-number"></p>
+        <!-- * questo div serve solo per far in modo che la lista stia su -->
+        <div>
+            <div class="date">
+                <div class="date__inline">
+                    <!-- weekday -->
+                    <p class="semibold" id="week-name"></p>
+                    <!-- number -->
+                    <p class="small" id="day-number"></p>
+                </div>
+                <!-- month -->
+                <p class="month" id="month"></p>
+    
+                <h2>Today's Task</h2>
             </div>
-            <!-- month -->
-            <p class="month" id="month"></p>
+    
+    
+            <!-- list -->
+            
+            <ul>
+                <li>
+                    <div class="touch">
+                        <div class="check"></div>
+                    </div>
+    
+                    <p class="list-item">ciao</p>
+    
+                    <div class="touch delete">
+                        <img src="images/delete.svg" alt="delete icon">
+                    </div>
+                </li>
 
-            <h2>Today's Task</h2>
+                <!-- ? PROVA CON IL CHECKED -->
+                <li>
+                    <div class="touch">
+                        <div class="checked">
+                            <img src="images/checked.svg" alt="checked">
+                        </div>
+                    </div>
+    
+                    <p class="list-item">ciao</p>
+    
+                    <div class="touch delete">
+                        <img src="images/delete.svg" alt="delete icon">
+                    </div>
+                </li>
+                
+            </ul>
+
+            
+
         </div>
 
-
-        <!-- list -->
-        <ul>
-        
-        </ul>
+        <button>Add Task</button>
     </main>
 </body>
 <script src="script.js"></script>

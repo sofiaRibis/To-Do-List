@@ -1,4 +1,12 @@
 main {
     padding: 34px 30px 57px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    //! qui non funziona il 100vh ma non so come farlo funzionare
+    height: 88vh;
 
+    h2 {
+        margin-bottom: 70px;
+    }
 }
