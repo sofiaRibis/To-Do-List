@@ -1,0 +1,20 @@
+.Launch-popup {
+    padding: 174px 24px 59px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 100vh;
+
+    img {
+        width: 353px;
+    }
+
+    &__text {
+        width: 231px;
+        //padding: 91px 0 34px;
+    }
+
+    //per il momento la metto in display none
+    display: none;
+}

@@ -1,0 +1,12 @@
+button {
+    width: 355px;
+    border-radius: 50px;
+    border: none;
+    background-color: $btn-bg;
+    color: $btn-text;
+    font-size: $button;
+    text-shadow: 0 2px 2px rgba(0, 0, 0, 0.25);
+    line-height: 36px;
+    font-weight: 600;
+    padding: 18px 104px;
+}
