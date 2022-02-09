@@ -47,22 +47,22 @@ p {
     font-size: $date; 
     line-height: 54px;
     letter-spacing: 1.5%;
-    
-    //for the name of the weekday
-    .semibold {
-        font-weight: 600;
-    }
+}
 
-    //for the number of the day
-    .small {
-       font-family: 400;
-    }
+//for the name of the weekday
+.semibold {
+    font-weight: 600;
+}
 
-    //for the month
-    .month {
-        font-size: $date-small; 
-        line-height: 27px;
-        font-weight: 400;
-        color: $dark-grey;
-    }
+//for the number of the day
+.small {
+   font-family: 400;
+}
+
+//for the month
+.month {
+    font-size: $date-small; 
+    line-height: 27px;
+    font-weight: 400;
+    color: $dark-grey;
 }

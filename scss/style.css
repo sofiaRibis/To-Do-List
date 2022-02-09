@@ -49,15 +49,15 @@ p {
   letter-spacing: 1.5%;
 }
 
-p .semibold {
+.semibold {
   font-weight: 600;
 }
 
-p .small {
+.small {
   font-family: 400;
 }
 
-p .month {
+.month {
   font-size: 18px;
   line-height: 27px;
   font-weight: 400;
@@ -82,6 +82,9 @@ body {
   margin: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+.center {
   text-align: center;
 }
 
@@ -113,5 +116,11 @@ body {
 }
 
 .date__inline {
-  display: inline;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.date__inline .small {
+  padding-left: 20px;
 }

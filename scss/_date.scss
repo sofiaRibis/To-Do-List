@@ -1,3 +1,10 @@
-.date__inline {
-    display: flex;
+.date {
+
+    &__inline {
+        display: flex;
+
+        .small {
+            padding-left: 20px;
+        }
+    }
 }
