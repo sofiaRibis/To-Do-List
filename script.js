@@ -1,3 +1,14 @@
+//launch popup
+let LaunchPopupDiv = document.querySelector('.Launch-popup');
+let launchBtn = document.querySelector('.Launch-popup button');
+let main = document.querySelector('main');
+
+launchBtn.addEventListener('click', function () {
+    LaunchPopupDiv.style.display = 'none';
+    main.style.display = 'flex';
+});
+
+
 //se volgio il nome del giorno
 const week = new Date();
 let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];

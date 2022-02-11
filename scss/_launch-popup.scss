@@ -1,10 +1,10 @@
 .Launch-popup {
-    padding: 174px 24px 59px;
+    padding: 94px 24px 59px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 100vh;
+    height: 80vh;
 
     img {
         width: 353px;
@@ -14,7 +14,4 @@
         width: 231px;
         //padding: 91px 0 34px;
     }
-
-    //per il momento la metto in display none
-    display: none;
 }
