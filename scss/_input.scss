@@ -16,7 +16,7 @@ input[type='text'] {
     }
 }
 
-input[type='submit' ] {
+input[type='submit'] {
     border-radius: 50px;
     border: none;
     background-color: $btn-bg;
@@ -25,7 +25,4 @@ input[type='submit' ] {
     width: 70%;
     height: 42.85px;
     font-size: $date-small;
-}
-
-.pop-btn {
 }

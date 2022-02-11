@@ -80,25 +80,29 @@ addTask.addEventListener('click', function () {
 });
 
 //create new element 
-//todo: cercare di creare un nuovo li e appenderlo alla ul 
+//todo: non cambino style se le clicco 
 let inputValue = document.querySelector('.popup input');
 let listWrapper = document.querySelector('ul');
-inputValue.value = '';
-const newListItem = `
-<li>
-    <label>
-        <input type="checkbox">
-        <p class="list-item">${inputValue.value}</p>
-        <div class="delete">
-            <img src="images/delete.svg" alt="delete icon">
-        </div>
-    </label>
-</li>`;
-
 
 saved.addEventListener('click', function () {
+    if (inputValue != '') {
+        let newToDo = document.createElement('li');
+        newToDo.innerHTML = `
+                <label>
+                    <input type="checkbox">
+                    <p class="list-item">${inputValue.value}</p>
+                    <div class="delete">
+                        <img src="images/delete.svg" alt="delete icon">
+                    </div>
+                </label>
+            
+        `;
+        inputValue.value = '';
+        listWrapper.appendChild(newToDo);
+    }
 
-})
+    modalPopupTask.classList.remove('flex-popup');
+});
 
 
 
