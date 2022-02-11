@@ -17,6 +17,7 @@ document.getElementById('month').innerHTML = months[month.getMonth()]
 let checkedItems = document.querySelectorAll('label input');
 let listItems = document.querySelectorAll('label');
 let text = document.querySelectorAll('label p');
+let li = document.querySelectorAll('li');
 
 
 checkedItems.forEach(checkedItem => {
@@ -43,3 +44,33 @@ checkedItems.forEach(checkedItem => {
         }
     });
 });
+
+//delete item 
+let trash = document.querySelectorAll('.delete');
+
+trash.forEach(junk => {
+    junk.addEventListener('click', function () {
+        console.log('ciao');
+
+        li.forEach(item => {
+            item.style.display = 'none';
+        });
+
+    });
+});
+
+//modal pop up
+let addTask = document.querySelector('.addTask');
+let modalPopupTask = document.querySelector('.modal-add-task');
+let saved = document.querySelector('popup button');
+
+addTask.addEventListener('click', function () {
+    modalPopupTask.classList.add('flex-popup');
+});
+
+
+
+
+
+
+

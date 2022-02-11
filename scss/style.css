@@ -90,6 +90,13 @@ button {
   z-index: 1000;
 }
 
+.pop-btn {
+  width: 70%;
+  height: 42.85px;
+  font-size: 18px;
+  text-shadow: none;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -261,6 +268,10 @@ ul li label input[type="checkbox"]:checked::before {
   background-image: url("data:image/svg+xml,%3Csvg width='19' height='16' viewBox='0 0 19 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect x='0.5' y='0.5' width='15' height='15' rx='7.5' fill='%23708FEE' stroke='%23708FEE'/%3E%3Cpath d='M17 2L7.00283 12.0001' stroke='white' stroke-width='2' stroke-linecap='round'/%3E%3Cpath d='M6.9248 12.0742L4 9' stroke='white' stroke-width='2' stroke-linecap='round'/%3E%3C/svg%3E");
 }
 
+ul li label .delete {
+  z-index: 1;
+}
+
 ul li .checked-task {
   color: #A4A4A4;
   text-decoration: line-through;
@@ -268,4 +279,87 @@ ul li .checked-task {
 
 ul .checked-item {
   background-color: rgba(240, 243, 255, 0.4);
+}
+
+.modal-add-task {
+  background-color: rgba(0, 0, 0, 0.424);
+  inset: 0 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  z-index: 2;
+  -webkit-backdrop-filter: blur(2px);
+          backdrop-filter: blur(2px);
+  display: none;
+}
+
+.modal-add-task .popup {
+  text-align: center;
+  width: 83%;
+  height: 30%;
+  background-color: #F0F3FF;
+  border-radius: 31px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.modal-add-task .popup h2 {
+  margin: 0;
+}
+
+.flex-popup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+input[type='text'] {
+  border: none;
+  width: 70%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 42.85px;
+  border-radius: 10px;
+  padding-left: 20px;
+}
+
+input[type='text']::-webkit-input-placeholder {
+  color: #919191;
+  letter-spacing: 2px;
+}
+
+input[type='text']:-ms-input-placeholder {
+  color: #919191;
+  letter-spacing: 2px;
+}
+
+input[type='text']::-ms-input-placeholder {
+  color: #919191;
+  letter-spacing: 2px;
+}
+
+input[type='text']::placeholder {
+  color: #919191;
+  letter-spacing: 2px;
+}
+
+input[type='text']:focus {
+  outline: 3px solid #708FEE;
 }

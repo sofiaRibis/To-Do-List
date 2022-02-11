@@ -1,0 +1,17 @@
+input[type='text'] {
+    border: none;
+    width: 70%;
+    box-sizing: border-box;
+    height: 42.85px;
+    border-radius: 10px;
+    padding-left: 20px;
+
+    &::placeholder {
+        color: #919191;
+        letter-spacing: 2px;
+    }
+
+    &:focus {
+       outline: 3px solid $purple; 
+    }
+}

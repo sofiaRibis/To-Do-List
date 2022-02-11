@@ -17,3 +17,10 @@ button {
 .main-btn {
     z-index: 1000;
 }
+
+.pop-btn {
+    width: 70%;
+    height: 42.85px;
+    font-size: $date-small;
+    text-shadow: none;
+}
