@@ -1,0 +1,67 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<Aps>
+	<Group>
+		<Page Width="12" Height="10" PaperTray="0">
+			<Canvas>
+				<Canvas>
+					<Clip>
+						<Path FillMode="Winding">
+							<PathFigure IsClosed="True">
+								<PolyLine LineColor="#FF000000">
+									<Point X="0" Y="10" />
+									<Point X="0" Y="-0.5" />
+								</PolyLine>
+								<PolyLine LineColor="#FF000000">
+									<Point X="0" Y="-0.5" />
+									<Point X="12.75" Y="-0.5" />
+								</PolyLine>
+								<PolyLine LineColor="#FF000000">
+									<Point X="12.75" Y="-0.5" />
+									<Point X="12.75" Y="10" />
+								</PolyLine>
+								<PolyLine LineColor="#FF000000">
+									<Point X="12.75" Y="10" />
+									<Point X="0" Y="10" />
+								</PolyLine>
+							</PathFigure>
+						</Path>
+					</Clip>
+					<Path FillMode="Alternate" RenderTransform="1 0 0 -1 0 10">
+						<Pen Alignment="Center" DashCap="Flat" DashOffset="0" DashStyle="Solid" EndCap="Square" LineJoin="Miter" MiterLimit="10" StartCap="Square" Width="1.5">
+							<Brush>
+								<SolidBrush Color="#FFFFFFFF" />
+							</Brush>
+						</Pen>
+						<PathFigure IsClosed="False">
+							<PolyLine LineColor="#FF000000">
+								<Point X="11.25" Y="9" />
+								<Point X="11.25" Y="9" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="11.25" Y="9" />
+								<Point X="3.7521224" Y="1.4999247" />
+							</PolyLine>
+						</PathFigure>
+					</Path>
+					<Path FillMode="Alternate" RenderTransform="1 0 0 -1 0 10">
+						<Pen Alignment="Center" DashCap="Flat" DashOffset="0" DashStyle="Solid" EndCap="Square" LineJoin="Miter" MiterLimit="10" StartCap="Square" Width="1.5">
+							<Brush>
+								<SolidBrush Color="#FFFFFFFF" />
+							</Brush>
+						</Pen>
+						<PathFigure IsClosed="False">
+							<PolyLine LineColor="#FF000000">
+								<Point X="3.6936" Y="1.4443502" />
+								<Point X="3.6936" Y="1.4443502" />
+							</PolyLine>
+							<PolyLine LineColor="#FF000000">
+								<Point X="3.6936" Y="1.4443502" />
+								<Point X="1.5" Y="3.75" />
+							</PolyLine>
+						</PathFigure>
+					</Path>
+				</Canvas>
+			</Canvas>
+		</Page>
+	</Group>
+</Aps>
