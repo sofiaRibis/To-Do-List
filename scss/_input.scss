@@ -15,3 +15,17 @@ input[type='text'] {
        outline: 3px solid $purple; 
     }
 }
+
+input[type='submit' ] {
+    border-radius: 50px;
+    border: none;
+    background-color: $btn-bg;
+    color: $btn-text;
+    line-height: 36px;
+    width: 70%;
+    height: 42.85px;
+    font-size: $date-small;
+}
+
+.pop-btn {
+}

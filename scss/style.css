@@ -363,3 +363,14 @@ input[type='text']::placeholder {
 input[type='text']:focus {
   outline: 3px solid #708FEE;
 }
+
+input[type='submit'] {
+  border-radius: 50px;
+  border: none;
+  background-color: #708FEE;
+  color: #fff;
+  line-height: 36px;
+  width: 70%;
+  height: 42.85px;
+  font-size: 18px;
+}

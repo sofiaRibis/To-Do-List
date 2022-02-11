@@ -62,13 +62,32 @@ trash.forEach(junk => {
 //modal pop up
 let addTask = document.querySelector('.addTask');
 let modalPopupTask = document.querySelector('.modal-add-task');
-let saved = document.querySelector('popup button');
+let saved = document.querySelector('input[type=submit]');
 
 addTask.addEventListener('click', function () {
     modalPopupTask.classList.add('flex-popup');
 });
 
+//create new element 
+//todo: cercare di creare un nuovo li e appenderlo alla ul 
+let inputValue = document.querySelector('.popup input');
+let listWrapper = document.querySelector('ul');
+inputValue.value = '';
+const newListItem = `
+<li>
+    <label>
+        <input type="checkbox">
+        <p class="list-item">${inputValue.value}</p>
+        <div class="delete">
+            <img src="images/delete.svg" alt="delete icon">
+        </div>
+    </label>
+</li>`;
 
+
+saved.addEventListener('click', function () {
+
+})
 
 
 
