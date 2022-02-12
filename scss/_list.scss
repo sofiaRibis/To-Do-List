@@ -88,19 +88,19 @@ ul {
             }
         }
 
-        .checked-task {
-            color: $disabled-text;
-            text-decoration: line-through;
-        }
-
+        
     }
-
-    //li when checked
-    .checked-item {
-       background-color: $disabled;
-    }
-
+    
+    
     
 }
 
+.checked-task {
+    color: $disabled-text;
+    text-decoration: line-through;
+}
+//li when checked
+.checked-item {
+   background-color: $disabled;
+}
 

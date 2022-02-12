@@ -272,12 +272,12 @@ ul li label .delete {
   z-index: 1;
 }
 
-ul li .checked-task {
+.checked-task {
   color: #A4A4A4;
   text-decoration: line-through;
 }
 
-ul .checked-item {
+.checked-item {
   background-color: rgba(240, 243, 255, 0.4);
 }
 
