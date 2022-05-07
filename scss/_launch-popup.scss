@@ -1,17 +1,24 @@
 .Launch-popup {
-    padding: 94px 24px 59px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    height: 80vh;
+	padding: 54px 24px 59px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-around;
+	height: 100vh;
 
-    img {
-        width: 353px;
-    }
+	img {
+		width: 353px;
+	}
 
-    &__text {
-        width: 231px;
-        //padding: 91px 0 34px;
-    }
+	&__text {
+		width: 231px;
+		padding-bottom: 2em;
+		//padding: 91px 0 34px;
+	}
+}
+
+@media screen and(min-width: 1000px) {
+	.Launch-popup {
+		padding: 30px 24px 59px;
+	}
 }
