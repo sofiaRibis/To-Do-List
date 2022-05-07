@@ -1,14 +1,25 @@
 main {
-    padding: 34px 30px 57px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    //! qui non funziona il 100vh ma non so come farlo funzionare
-    height: 88vh;
+	box-sizing: border-box;
+	padding: 34px 30px 57px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	//! qui non funziona il 100vh ma non so come farlo funzionare
+	height: 100vh;
+	position: relative;
 
-    display: none;
+	display: none;
 
-    h2 {
-        margin-bottom: 70px;
-    }
+	h2 {
+		margin-bottom: 70px;
+	}
+
+	.addTask {
+		position: relative;
+		//bottom: 57px;
+		//left: 30px;
+		top: 0;
+		left: 0;
+		z-index: 3;
+	}
 }

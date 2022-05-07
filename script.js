@@ -64,6 +64,7 @@ saved.addEventListener('click', function () {
     }
 
     modalPopupTask.classList.remove('flex-popup');
+
 });
 
 //modal pop up

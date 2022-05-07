@@ -1,8 +1,13 @@
+* {
+	@include normalize;
+}
+
 body {
-    @include normalize;
+	height: 100vh;
+	overflow: hidden;
 }
 
 //for the pop up
 .center {
-    text-align: center;
+	text-align: center;
 }
