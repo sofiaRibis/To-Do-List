@@ -345,7 +345,7 @@ ul li label .delete {
 .modal-add-task .popup {
   text-align: center;
   width: 83%;
-  height: 30%;
+  height: 300px;
   background-color: #F0F3FF;
   border-radius: 31px;
   display: -webkit-box;
