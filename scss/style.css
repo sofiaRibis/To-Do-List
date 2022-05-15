@@ -174,6 +174,7 @@ main .addTask {
   top: 0;
   left: 0;
   z-index: 1;
+  margin-bottom: 2em;
 }
 
 .date__inline {
