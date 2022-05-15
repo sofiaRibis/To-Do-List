@@ -173,7 +173,7 @@ main .addTask {
   position: relative;
   top: 0;
   left: 0;
-  z-index: 3;
+  z-index: 1;
 }
 
 .date__inline {
