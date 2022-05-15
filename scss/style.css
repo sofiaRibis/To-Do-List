@@ -257,6 +257,11 @@ ul li label {
           justify-content: space-between;
   width: 100%;
   padding-inline: 20px;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  position: relative;
 }
 
 ul li label input[type="checkbox"] {
@@ -305,6 +310,10 @@ ul li label input[type="checkbox"]:checked + p {
   color: #A4A4A4;
 }
 
+ul li label .list-item {
+  margin: 0 auto;
+}
+
 ul li label .delete {
   width: 10px;
   aspect-ratio: 1 / 1;
@@ -312,6 +321,9 @@ ul li label .delete {
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
+  position: absolute;
+  z-index: 20;
+  right: 20px;
 }
 
 .checked-item {

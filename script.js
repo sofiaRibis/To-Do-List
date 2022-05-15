@@ -67,14 +67,14 @@ launchBtn.addEventListener("click", function () {
 
 //create new element
 //todo: non cambino style se le clicco
-saved.addEventListener("click", function () {
+saved.addEventListener("click", function (e) {
 	if (inputValue != "") {
 		let newToDo = document.createElement("li");
 		newToDo.innerHTML = `
                     <label>
                         <input type="checkbox">
                         <p class="list-item">${inputValue.value}</p>
-                        <div class="delete">
+                        <div onclick="deleteToDo()" class="delete">
                         </div>
                     </label>
                     
@@ -92,10 +92,30 @@ addTask.addEventListener("click", function () {
 	modalPopupTask.classList.add("flex-popup");
 });
 
-//see if item is checked or not
-checkedItems.forEach((element) => {
-	element.addEventListener("click", function (e) {
-		const ciao = e.target;
-		console.log(ciao);
+//delete todo
+function deleteToDo() {
+	const label = document.querySelectorAll("label");
+
+	label.forEach((element) => {
+		const trash = element.querySelector(".delete");
+		trash.addEventListener("click", function () {
+			element.style.display = "none";
+		});
 	});
-});
+}
+
+//check todo
+function checkToDo() {
+	const label_1 = document.querySelectorAll("label");
+
+	label_1.forEach((element) => {
+		element.addEventListener("click", function (e) {
+			console.log(e.target);
+			if (e % 2 == 0) {
+				element.style.backgroundColor = "rgba(240, 243, 255, 0.4)";
+			} else {
+				element.style.backgroundColor = "#F0F3FF";
+			}
+		});
+	});
+}

@@ -49,6 +49,8 @@ ul {
 			justify-content: space-between;
 			width: 100%;
 			padding-inline: 20px;
+			user-select: none;
+			position: relative;
 
 			//* custom checkbox button
 			input[type="checkbox"] {
@@ -93,6 +95,10 @@ ul {
 				}
 			}
 
+			.list-item {
+				margin: 0 auto;
+			}
+
 			.delete {
 				width: 10px;
 				aspect-ratio: 1 / 1;
@@ -100,6 +106,9 @@ ul {
 				background-size: contain;
 				background-position: center;
 				background-repeat: no-repeat;
+				position: absolute;
+				z-index: 20;
+				right: 20px;
 			}
 		}
 	}
