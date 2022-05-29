@@ -82,6 +82,9 @@ saved.addEventListener("click", function (e) {
 		// <img src="images/delete.svg" alt="delete icon">
 		inputValue.value = "";
 		listWrapper.appendChild(newToDo);
+		newToDo.querySelector(".delete").addEventListener("click", () => {
+			deleteItem(newToDo);
+		});
 	}
 
 	modalPopupTask.classList.remove("flex-popup");
@@ -93,15 +96,19 @@ addTask.addEventListener("click", function () {
 });
 
 //delete todo
-function deleteToDo() {
-	const label = document.querySelectorAll("label");
 
-	label.forEach((element) => {
-		const trash = element.querySelector(".delete");
-		trash.addEventListener("click", function () {
-			element.style.display = "none";
-		});
+const label = document.querySelectorAll("label");
+
+label.forEach((element) => {
+	const trash = element.querySelector(".delete");
+	trash.addEventListener("click", function () {
+		// element.style.display = "none";
+		deleteItem(element);
 	});
+});
+
+function deleteItem(element) {
+	element.remove();
 }
 
 //check todo
