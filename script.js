@@ -1,4 +1,4 @@
-//se volgio il nome del giorno
+//day name
 const week = new Date();
 let days = [
 	"Sunday",
@@ -11,11 +11,11 @@ let days = [
 ];
 document.getElementById("week-name").innerHTML = days[week.getDay()] + ",";
 
-//se volgio il numero del giorno
+//day number
 const d = new Date();
 document.getElementById("day-number").innerHTML = d.getDate();
 
-//se voglio il nome del mese
+//month day
 const month = new Date();
 let months = [
 	"January",
@@ -41,9 +41,6 @@ let main = document.querySelector("main");
 
 //per quando gli li vengono flaggati
 let checkedItems = document.querySelectorAll("label input");
-let listItems = document.querySelectorAll("label");
-let text = document.querySelectorAll("p .list-item");
-let li = document.querySelectorAll("li");
 
 //modal pop up
 let addTask = document.querySelector(".addTask");
@@ -58,7 +55,7 @@ let listWrapper = document.querySelector("ul");
 let trash = document.querySelectorAll(".delete");
 
 //label
-const label = document.querySelectorAll("label");
+let label = document.querySelectorAll("label");
 
 //======================================================
 
