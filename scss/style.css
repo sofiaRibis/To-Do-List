@@ -328,7 +328,8 @@ ul li label .delete {
 }
 
 .checked-item {
-  background-color: rgba(240, 243, 255, 0.4);
+  color: red;
+  background-color: black;
 }
 
 .modal-add-task {

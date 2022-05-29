@@ -57,6 +57,9 @@ let listWrapper = document.querySelector("ul");
 //delete item
 let trash = document.querySelectorAll(".delete");
 
+//label
+const label = document.querySelectorAll("label");
+
 //======================================================
 
 //launch popup
@@ -66,25 +69,29 @@ launchBtn.addEventListener("click", function () {
 });
 
 //create new element
-//todo: non cambino style se le clicco
-saved.addEventListener("click", function (e) {
+saved.addEventListener("click", function () {
 	if (inputValue != "") {
 		let newToDo = document.createElement("li");
 		newToDo.innerHTML = `
                     <label>
                         <input type="checkbox">
                         <p class="list-item">${inputValue.value}</p>
-                        <div onclick="deleteToDo()" class="delete">
+                        <div class="delete">
                         </div>
-                    </label>
-                    
+                    </label>  
                     `;
-		// <img src="images/delete.svg" alt="delete icon">
+
 		inputValue.value = "";
 		listWrapper.appendChild(newToDo);
+		//to  delete newToDo
 		newToDo.querySelector(".delete").addEventListener("click", () => {
 			deleteItem(newToDo);
 		});
+
+		// newToDo.querySelector("label").addEventListener("click", () => {
+		// 	isChecked(newToDo);
+		// 	console.log(isChecked(newToDo));
+		// });
 	}
 
 	modalPopupTask.classList.remove("flex-popup");
@@ -96,9 +103,6 @@ addTask.addEventListener("click", function () {
 });
 
 //delete todo
-
-const label = document.querySelectorAll("label");
-
 label.forEach((element) => {
 	const trash = element.querySelector(".delete");
 	trash.addEventListener("click", function () {
@@ -112,17 +116,27 @@ function deleteItem(element) {
 }
 
 //check todo
-function checkToDo() {
-	const label_1 = document.querySelectorAll("label");
+// function isChecked(element) {
+// 	let click = 0;
+// 	if (click % 2 == 0) {
+// 		element.style.backgroundColor = "rgba(240, 243, 255, 0.4)";
+// 	} else {
+// 		element.style.backgroundColor = "#F0F3FF";
+// 	}
+// }
 
-	label_1.forEach((element) => {
-		element.addEventListener("click", function (e) {
-			console.log(e.target);
-			if (e % 2 == 0) {
-				element.style.backgroundColor = "rgba(240, 243, 255, 0.4)";
-			} else {
-				element.style.backgroundColor = "#F0F3FF";
-			}
-		});
-	});
-}
+// label.forEach((element) => {
+// 	// element.addEventListener("click", function (e) {
+// 	// 	if (e % 2 == 0) {
+// 	// 		element.style.backgroundColor = "rgba(240, 243, 255, 0.4)";
+// 	// 	} else {
+// 	// 		element.style.backgroundColor = "#F0F3FF";
+// 	// 	}
+// 	// });
+// 	element.addEventListener("click", isChecked(element));
+// });
+
+// function isChecked(element) {
+// 	element.classList.toggle("checked-item");
+// 	element.style.color = "red";
+// }
