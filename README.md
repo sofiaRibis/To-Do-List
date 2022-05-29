@@ -1,12 +1,17 @@
 # To Do List
 
-to do list design
+to do list screenshots:
 
-lunch section design
-![To Do List-launch](https://user-images.githubusercontent.com/82873749/170863102-023b3eb7-6b2f-42d3-a777-f5987e00993b.png)
+lunch section design:
 
-add task
-![To Do List-add new](https://user-images.githubusercontent.com/82873749/170863122-12678fec-85e9-4429-9df6-ef986b32fb3f.png)
+![launch section](https://user-images.githubusercontent.com/82873749/170863440-189b42cf-20cb-4d98-9720-cb67e69ca028.png)
+
+
+add task pop up:
+
+![add task pop up](https://user-images.githubusercontent.com/82873749/170863433-f9aced7e-955b-444e-bd62-17ae37061162.png)
+
 
 list of to do
-![To Do List](https://user-images.githubusercontent.com/82873749/170863133-75d97508-d776-49d8-877f-035e20d541f1.png)
+
+![to do list ](https://user-images.githubusercontent.com/82873749/170863428-91a8151c-fe81-46d7-9dcf-bd467edc1e7e.png)
